@@ -15,18 +15,16 @@ body {
 
 .page {
   max-width: 1200px;
-  margin: 0px 20px;
+  margin: 0px auto;
   background: #f4f4f4;
-  padding-bottom: 40px;
 }
 
 .hero {
   position: relative;
   height: 480px;
-  background: url("fish-hero.jpg") center/cover no-repeat;
+  background: url("header2.png") center/cover no-repeat;
 }
-
-.hero-overlay {
+  .hero-overlay {
   position: absolute;
   inset: 0;
   background: rgba(0,0,0,0.25);
@@ -71,13 +69,13 @@ body {
 
 .concept-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.2fr 1fr;
   gap: 20px;
   margin-bottom: 32px;
 }
 
 .card {
-  background: #e4e4e4;
+  background: #d4d6d4;
   border-radius: 32px;
   padding: 60px;
 }
@@ -97,32 +95,54 @@ body {
   justify-content: center;
   gap: 120px;
   padding: 40px 0 38px;
-  background: #e4e4e4;
+  background: #ad3c1c;
   margin: 0 -24px 32px;
 }
 
-.circle {
+.circle1 {
   width: 160px;
   height: 160px;
   border-radius: 50%;
-  background: #f4f4f4;
+  border: 4px solid #fff;
+  background-image: url("1.png");
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+.circle2 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-image: url("2.png");
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
+}
+.circle3 {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  border: 4px solid #fff;
+  background-image: url("3.png");
+  background-repeat: no-repeat; 
+  background-position: center;
+  background-size: cover;
 }
 
 .fish-section {
-  background: #e4e4e4;
+  background: #d4d6d4;
   margin-bottom: 28px;
   padding: 24px 20px 28px;
 }
 
 .fish-inner {
   display: grid;
-  grid-template-columns: 1fr 1.1fr;
+  grid-template-columns: 400px 1.1fr;
   gap: 20px;
-  align-items: start;
 }
-
 .fish-inner.reverse {
-  grid-template-columns: 1.1fr 1fr;
+    grid-template-columns: 1.1fr 400px;
 }
 
 .fish-image {
@@ -130,7 +150,12 @@ body {
   border: 1px solid #ccc;
   padding: 6px;
 }
-
+.fish-image.reverse {
+  background: #f4f4f4;
+  border: 1px solid #ccc;
+  padding: 6px;
+}
+  
 .fish-image img {
   width: 100%;
   display: block;
@@ -152,7 +177,7 @@ body {
 }
 
 .fish-title-en {
-  font-size: 42px;
+  font-size: 62px;
   font-weight: 700;
   margin: 4px 0 10px;
   text-transform: uppercase;
@@ -167,22 +192,22 @@ body {
   margin-bottom: 12px;
 }
 
-.fish-section.small-image .fish-inner {
-  grid-template-columns: 1.1fr 0.9fr;
-}
-
-.fish-section.small-image .fish-inner.reverse {
-  grid-template-columns: 0.9fr 1.1fr;
-}
-
 .footer {
   text-align: center;
   font-size: 24px;
   font-weight: 700;
   margin-top: 20px;
-  color: #000000;
+  padding: 40px;
+  color: #ffffff;
+  background-color: #ad3c1c;
 }
-
+  a {
+    color: #fff;
+  }
+  a:hover{
+    color:#ffc9bd;
+  }
+  
 .footer span {
   display: block;
 }
@@ -196,7 +221,9 @@ body {
       <div class="hero-text">
         <div class="hero-title">I HOPE YOU LIKE FISH</div>
         <div class="hero-sub">
-HEY! I HOPE YOU LIKE FISH.  IHYLF WAS MADE TO EXAMINE THE SACRED AND THE PROFANE WITHIN THE CONTEXT OF FOLKLORE. (AND FISH)
+HEY! I HOPE YOU LIKE FISH. 
+IHYLF WAS MADE TO EXAMINE THE SACRED AND THE PROFANE WITHIN THE CONTEXT OF FOLKLORE.
+(AND FISH)
         </div>
       </div>
     </header>
@@ -205,7 +232,7 @@ HEY! I HOPE YOU LIKE FISH.  IHYLF WAS MADE TO EXAMINE THE SACRED AND THE PROFA
       <section class="concept-grid">
         <article class="card card-tall">
           <h2 class="card-title">Hierophany</h2>
-          <p>“Hierophany” refers to the concept of the sacred interacting with the profane in ways which make it tangible, and revealing itself to us.</p>
+          <p><strong><i>“Hierophany”</i></strong> refers to the concept of the sacred interacting with the profane in ways which make it tangible, and revealing itself to us.</p>
 
           <p>Myths and legends often center instances of hierophany. Often describing manifestations of the sacred in the ordinary or “profane” through mythical places, events, objects, or creatures.</p>
 
@@ -219,14 +246,14 @@ HEY! I HOPE YOU LIKE FISH.  IHYLF WAS MADE TO EXAMINE THE SACRED AND THE PROFA
 
         <article class="card">
           <h2 class="card-title">The Sacred</h2>
-          <p>“The Sacred” (Sacrum) are things, places, or times set apart, revered, and imbued with spiritual meaning, or a connection to the divine.</p>
+          <p><strong><i>“The Sacred”</i></strong> (Sacrum) are things, places, or times set apart, revered, and imbued with spiritual meaning, or a connection to the divine.</p>
 
           <p>They inspire reverence, and are often seen as transcendent — containing deeper meaning beyond their immediate material component.</p>
         </article>
 
         <article class="card">
           <h2 class="card-title">The Profane</h2>
-          <p>"The Profane" (Pro-fanum) refer to the ordinary, everyday aspects of life — that lack sacred meaning, contrasting the "sacred" which is associated with the spiritual and often revered.</p>
+          <p><strong><i>"The Profane"</i></strong> (Pro-fanum) refer to the ordinary, everyday aspects of life — that lack sacred meaning, contrasting the "sacred" which is associated with the spiritual and often revered.</p>
 
           <p>The profane signifies things outside the divine realm, from common talk to outright disrespect. 
           </p>
@@ -234,15 +261,15 @@ HEY! I HOPE YOU LIKE FISH.  IHYLF WAS MADE TO EXAMINE THE SACRED AND THE PROFA
       </section>
 
       <section class="circle-row">
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="circle"></div>
+        <a href="#ONAMAZU"><div class="circle1"></div></a>
+        <a href="#SHACHIHOKO"><div class="circle2"></div></a>
+        <a href="#NINGYO"><div class="circle3"></div></a>
       </section>
 
-      <section class="fish-section">
+      <section id="ONAMAZU" class="fish-section">
         <div class="fish-inner">
           <div class="fish-image">
-            <img src="onamazu-print.jpg" alt="Onamazu woodblock print" />
+            <img src="1.png" alt="Takemikazuchi, subduing an ōnamazu. Pinning him under a sacred stone." />
           </div>
           <div class="fish-meta">
             <div class="fish-title-jp">おおなまず</div>
@@ -252,33 +279,33 @@ HEY! I HOPE YOU LIKE FISH.  IHYLF WAS MADE TO EXAMINE THE SACRED AND THE PROFA
 
             <p>Ōnamazu are associated with earthquakes, an association which emerged from frequent sightings of catfish convulsing violently without apparent cause shortly before tremors would strike. By the Edo period, this led to the image of a giant restless catfish gradually displacing the idea of underground dragon in popular imagination, becoming the prevailing explanation for seismic unrest and natural disaster.</p>
 
-            <p>he most famout myth about ōnamazu originates from The Kashima Shrine in Ibaraki prefecture. Wherein the deity of the shrine, a patron deity of martial arts named Takemikazuchi, is said to have subdued an ōnamazu. Pinning him under a sacred stone.</p>
+            <p>The most famout myth about ōnamazu originates from The Kashima Shrine in Ibaraki prefecture. Wherein the deity of the shrine, a patron deity of martial arts named Takemikazuchi, is said to have subdued an ōnamazu. Pinning him under a sacred stone.</p>
           </div>
         </div>
       </section>
 
-      <section class="fish-section small-image">
+      <section id="SHACHIHOKO" class="fish-section small-image">
         <div class="fish-inner reverse">
           <div class="fish-meta">
             <div class="fish-title-jp">しゃちほこ</div>
             <div class="fish-title-en">鯱鉾</div>
             <div class="fish-label">SHACHIHOKO</div>
-            <p>Shachihoko are fearsome sea creatures with the body of a large fish and the head of a tiger, they known for their upward-curving tails, spiked dorsal fins, and ability to gulp vast amounts of water or summon rain clouds. </p>
+              <p>Shachihoko are fearsome sea creatures with the body of a large fish and the head of a tiger, they known for their upward-curving tails, spiked dorsal fins, and ability to gulp vast amounts of water or summon rain clouds. </p>
 
-            <p>Shachihoko are thought to be protector spirits originating from the colder northern seas. They originated from china and became powerful protective symbols in Japan during the Nara and Heian period.</p>
+              <p>Shachihoko are thought to be protector spirits originating from the colder northern seas. They originated from china and became powerful protective symbols in Japan during the Nara and Heian period.</p>
 
-            <p>Commonly installed in pairs on the rooftops of castles, temples, gates, and samurai residences, it was thought that in the event of a fire the shachihoko would be able to call down rain or expel the stored water in their stomach.</p>
+              <p>Commonly installed in pairs on the rooftops of castles, temples, gates, and samurai residences, it was thought that in the event of a fire the shachihoko would be able to call down rain or expel the stored water in their stomach.</p>
           </div>
-          <div class="fish-image">
-            <img src="shachihoko-print.jpg" alt="Shachihoko woodblock print" />
+          <div class="fish-image reverse">
+            <img src="2.png" alt="Shachihoko woodblock print" />
           </div>
         </div>
       </section>
-
-      <section class="fish-section small-image">
+      
+      <section class="fish-section">
         <div class="fish-inner">
           <div class="fish-image">
-            <img src="ningyo-print.jpg" alt="Ningyo woodblock print" />
+            <img src="3.png" alt="Takemikazuchi, subduing an ōnamazu. Pinning him under a sacred stone." />
           </div>
           <div class="fish-meta">
             <div class="fish-title-jp">にんぎょ</div>
@@ -286,16 +313,16 @@ HEY! I HOPE YOU LIKE FISH.  IHYLF WAS MADE TO EXAMINE THE SACRED AND THE PROFA
             <div class="fish-label">NINGYO</div>
             <p>Ningyo are monstrous humanoid fish whose forms range from child-sized creatures with distorted, fishlike faces to larger beings with human torsos, long bony fingers, and sharp claws—far closer to beasts than to the beautiful Western-style mermaids that became popular in Japan after the Edo period.</p>
 
-            <p>Mentioned as early as the Nihon Shoki (619 CE), ningyo appear throughout Japan’s oldest histories, often as omens or sources of danger. Their flesh is said to grant eternal youth, making them the subject of many tales, yet attempting to capture or harm a ningyo risks a devastating curse; some stories recount entire towns swallowed by earthquakes or tidal waves after a fisherman brought one home.</p>
+            <p>Mentioned as early as the Nihon Shoki (619 CE), ningyo appear throughout Japan’s oldest stories, often as omens or sources of danger. Their flesh is said to grant eternal youth, making them the subject of many tales, yet attempting to capture or harm a ningyo risks a devastating curse; some stories recount entire towns swallowed by earthquakes or tidal waves after a fisherman brought one home.</p>
           </div>
         </div>
       </section>
-
-      <footer class="footer">
-        <span>HI AGAIN THIS IS THE END OF THE PAGE.</span>
-        <span>Thanks for checking out my site.</span>
-      </footer>
     </main>
+      <footer class="footer">
+        <span>HI AGAIN</span>
+        <span>This is the end of the page, thanks for checking out my site!</span>
+        <span><p><a href="mailto:Ywquach@uwaterloo.ca">Email me!</a></p></span>
+      </footer>
   </div>
 </body>
 </html>
